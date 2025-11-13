@@ -1,4 +1,4 @@
-# Proyecto-Final-An-lisis-del-Comportamiento-de-Aplicaciones-bajo-Diferentes-Escenarios-de-Despliegue
+# Proyecto-Final-Analisis-del-Comportamiento-de-Aplicaciones-bajo-Diferentes-Escenarios-de-Despliegue
 
 ## 1. Descripción General del Proyecto
 Este proyecto analiza el comportamiento de una aplicación backend con API REST y base de datos persistente, desplegada en distintos entornos:
