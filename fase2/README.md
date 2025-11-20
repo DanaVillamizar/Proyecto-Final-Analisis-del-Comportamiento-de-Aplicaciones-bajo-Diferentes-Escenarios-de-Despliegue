@@ -19,8 +19,3 @@ Instrucciones rápidas:
 
    kubectl scale deployment/frontend-deployment --replicas=5 -n frontend-ns
    kubectl scale deployment/backend-deployment --replicas=4 -n backend-ns
-
-Notas:
-- Los valores de `replicas` iniciales en los YAML son ejemplos (frontend:3, backend:2). Cámbialos a lo que necesites.
-- Si usas un cluster local y `frontend-service` permanece Pending (LoadBalancer), cambia `type: LoadBalancer` a `NodePort` o usa una solución de LB (metallb) o `minikube tunnel`.
-- En este manifiesto no se creó una base de datos MySQL ni un PersistentVolume; si necesitas la DB en k8s, puedo añadir los manifiestos (Secret, PersistentVolumeClaim, Deployment StatefulSet y Service).
