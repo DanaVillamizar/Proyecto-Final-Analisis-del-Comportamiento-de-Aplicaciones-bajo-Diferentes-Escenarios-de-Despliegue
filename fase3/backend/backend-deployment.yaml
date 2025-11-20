@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: licomart-backend
+  namespace: licomart
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: santiov22/backend-licomart
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DB_HOST
+              value: "licomart-mysql"
+            - name: DB_NAME
+              value: "licomartdb"
+            - name: DB_USER
+              value: "root"
+            - name: DB_PASSWORD
+              value: "1234"
